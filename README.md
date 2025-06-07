@@ -69,9 +69,20 @@ Each model was trained on historical closing prices and evaluated on the last 10
 
 Evaluation graphs are included for all models:
 - Training/Test loss trends
-- Last 10 predicted vs actual closing prices
+  ![image](https://github.com/user-attachments/assets/7190a471-c713-4167-a13f-f21bf623f540)
+  
+ ![image](https://github.com/user-attachments/assets/ba381a61-5c72-4e38-bb59-6d3be5ffc95a)
 
-![Model Evaluation Sample](graphs/sample-model-comparison.png) <!-- Replace with your actual file path -->
+ ![image](https://github.com/user-attachments/assets/4ab3cd2c-d31e-4af1-a1cb-e7c6f98ad7dc)
+
+ ![image](https://github.com/user-attachments/assets/dadb041c-1ad3-4beb-ad13-0eef814d3a55)
+
+- Last 10 predicted vs actual closing prices
+RNN Model: Achieved a test MSE of 109.07, with a last 10 days prediction result of 12.32.
+LSTM Model: Had a test MSE of 104.97, with a last 10 days prediction result of 16.49.
+GRU Model: Obtained a test MSE of 101.89, with a last 10 days prediction result of 19.57.
+Conv1D Model: Demonstrated superior performance with a test MSE of 17.61, but had a higher last 10 days prediction result of 165.03.
+
 
 ---
 
