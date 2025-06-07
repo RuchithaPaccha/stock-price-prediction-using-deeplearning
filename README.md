@@ -78,11 +78,10 @@ Evaluation graphs are included for all models:
  ![image](https://github.com/user-attachments/assets/dadb041c-1ad3-4beb-ad13-0eef814d3a55)
 
 - Last 10 predicted vs actual closing prices
-RNN Model: Achieved a test MSE of 109.07, with a last 10 days prediction result of 12.32.
-LSTM Model: Had a test MSE of 104.97, with a last 10 days prediction result of 16.49.
-GRU Model: Obtained a test MSE of 101.89, with a last 10 days prediction result of 19.57.
-Conv1D Model: Demonstrated superior performance with a test MSE of 17.61, but had a higher last 10 days prediction result of 165.03.
-
+- RNN Model: Achieved a test MSE of 109.07, with a last 10 days prediction result of 12.32.
+- LSTM Model: Had a test MSE of 104.97, with a last 10 days prediction result of 16.49.
+- GRU Model: Obtained a test MSE of 101.89, with a last 10 days prediction result of 19.57.
+- Conv1D Model: Demonstrated superior performance with a test MSE of 17.61, but had a higher last 10 days prediction result of 165.03.
 
 ---
 
