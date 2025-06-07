@@ -87,3 +87,64 @@ Evaluation graphs are included for all models:
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/stock-price-rnn-models.git
+
+# 📈 Amazon Stock Price Prediction using RNN, LSTM, GRU, and Conv1D
+
+This project predicts the 10th-day closing stock price of **Amazon (AMZN)** using past 9 days' prices. It compares the performance of **RNN**, **LSTM**, **GRU**, and **Conv1D** deep learning models for time series forecasting.
+
+---
+
+## 📊 Dataset Overview
+
+- **Source**: Yahoo Finance  
+- **Ticker**: AMZN  
+- **Period**: Jan 1, 2022 – Dec 31, 2023  
+- **Used Feature**: `Close` price
+
+---
+
+## 🧠 Model Architectures & Highlights
+
+- **Model 1: RNN**
+  - LSTM layer with 64 units, 16,896 parameters
+- **Model 2: LSTM**
+- **Model 3: GRU**
+- **Model 4: Conv1D**
+
+Each model was trained on historical closing prices and evaluated on the last 10 days of unseen data.
+
+---
+
+## 📉 Model Performance Summary
+
+| Model   | Test MSE | Last 10 Days MSE |
+|---------|----------|------------------|
+| RNN     | 109.07   | **12.32**        |
+| LSTM    | 104.94   | 16.49            |
+| GRU     | 101.89   | 19.57            |
+| Conv1D  | **17.61**| 165.03           |
+
+---
+
+## 🧪 Insights
+
+- **Conv1D** achieved the **lowest test MSE**, showing excellent overall prediction ability.
+- **RNN** had the **lowest error on the last 10 days**, indicating better short-term forecasting.
+- **GRU** and **LSTM** delivered stable performance but did not outperform RNN or Conv1D.
+
+---
+
+## ✅ Conclusion
+
+- **Best Overall Model**: Conv1D — lowest test error.
+- **Best Short-Term Predictor**: RNN — lowest error on last 10 days.
+- Conv1D may slightly overfit, while RNN generalizes well to unseen short-term data.
+
+This project shows how different deep learning models behave on stock market time series and guides future forecasting decisions for analysts and ML practitioners.
+
+---
+
+📬 **Author**: Ruchitha Paccha  
+📧 Email: ruchitha1904@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/ruchitha-chowdary-paccha/)
+
